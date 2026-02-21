@@ -56,11 +56,6 @@ document.addEventListener('keydown', (event) => {
 
   moved = game.hasMoved(prevState);
 
-  if (moved) {
-    game.addRandomTile();
-    render();
-  }
-
   if (!game.checkWin()) {
     game.checkLose();
   }
